@@ -66,16 +66,13 @@ const weatherpanel = document.querySelector('.weather-panel');
 
 //Set up loop via index with steps of 2, and add weather data alternatingly between two divs in two columns via grid to fit maybe?
 
-function ass () {
+function populatePanels () {
     for(let i = 0; i < 8; i++){
-      weatherpanel.innerHTML = weatherpanel.innerHTML + 'Time - 12:00<br>';
-      weatherpanel.innerHTML = weatherpanel.innerHTML + 'Temp ass<br>';
-      weatherpanel.innerHTML = weatherpanel.innerHTML + 'Temp butt<br>';
-      weatherpanel.innerHTML = weatherpanel.innerHTML + 'Butt - butt<br>'
+
     }
   }
 
-ass();
+
 
 
 async function getWeatherData(coords) {
