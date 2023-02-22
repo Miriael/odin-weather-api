@@ -1,7 +1,7 @@
 import { stateDropdown, countryDropdown, cityInput, cityError } from '../main.js'
 
-const countryCodes = await (await fetch('/world.json')).json();
-const stateCodes = await (await fetch('/subdivisions.json')).json();
+const countryCodes = await (await fetch('./world.json')).json();
+const stateCodes = await (await fetch('./subdivisions.json')).json();
 
 function getAllCountries(){
   for(let element of countryCodes) {
