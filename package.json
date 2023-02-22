@@ -3,12 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://miriael.github.io/odin-weather-api/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "vite": "^4.1.0"
+    "gh-pages": "^5.0.0",
+    "vite": "^4.1.0",
+    "vite-plugin-gh-pages": "^0.4.1"
   }
 }
