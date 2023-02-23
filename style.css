@@ -18,13 +18,21 @@ body {
   flex-wrap:wrap;
   justify-content:center;
   gap: 60px;
-  font-size: 80%;
+  font-size: 65%;
+  font-family:'Courier New', Courier, monospace
 }
 
 .weather-panel {
-  outline: 1px solid black;
+  border: 1px solid rgba(0, 132, 255, 0.795);
+  border-radius: 60px;
+  background-color: rgba(0, 132, 255, 0.13);
   width: 350px;
   height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 fieldset {
@@ -58,6 +66,7 @@ fieldset {
   border-radius: 60px;
   padding: 20px;
   margin-bottom: 25px;
+  width: 357px;
 }
 
 .error {
@@ -110,4 +119,17 @@ select {
   border-radius: 60px;
   background-color:rgb(42, 137, 226);
   margin-bottom: 1.5em;
+}
+
+.current {
+  height: 40px;
+  width: 390px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+}
+
+.interval-container {
+  text-align: center;
+  box-sizing: border-box;
 }
