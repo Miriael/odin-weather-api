@@ -44,13 +44,13 @@ async function getWeatherData(coords) {
       currentResult = await currentUrl.json();
       let forecastUrl = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${coords[0]}&lon=${coords[1]}&units=metric&appid=6538885ee061064bc99332441ad15f2b`);
       forecastResult = await forecastUrl.json();
-      units = 'C';
+      units = '°C';
     } else if (fahrenheitBox.checked) {
       let currentUrl = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${coords[0]}&lon=${coords[1]}&units=imperial&appid=6538885ee061064bc99332441ad15f2b`);
       currentResult = await currentUrl.json();
       let forecastUrl = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${coords[0]}&lon=${coords[1]}&units=imperial&appid=6538885ee061064bc99332441ad15f2b`);
       forecastResult = await forecastUrl.json();
-      units = 'F';
+      units = '°F';
     }
     let intervalsLeft = getIntervalsLeft(currentResult.dt);
     let arrayOfDays = [[],[],[]];
